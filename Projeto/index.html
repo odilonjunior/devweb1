@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Projeto/css/index.css"
+    <!-- <link rel="stylesheet" href="/Projeto/css/index.css" -->
+
+    <style>
+
+        body{
+            background-color: rgb(165, 165, 165);
+        }
+        
+        div{
+            border: solid 1px;
+        }
+
+        #cabecalho{
+            height: 75px;
+            font-size: 20px;
+
+        }
+
+        #corpo{
+            height: 300px;
+        }
+
+        
+        #rodape{
+            height: 50px;
+        }
+
+        div[id^="parte"]{
+
+            font-size: 50%;
+
+        }
+
+
+        /* 
+        SELEÇÃO POR ATRIBUTOS   
+
+        ELEMENTO[ATRIBUTO="VALOR"] --> Seleciona elementos cujo atributo é igual a alguma coisa
+        ELEMENTO[ATRIBUTO^="VALOR"] --> Seleciona elementos cujo atributo inicia com algum valor
+        ELEMENTO[ATRIBUTO$="VALOR"] --> Seleciona elementos cujo atributo termina com algum valor
+        ELEMENTO[ATRIBUTO*="VALOR"] --> Seleciona elementos que contenham um valor como atributo
+        */
+
+    </style>
+
+
     
+
+    
+
 </head>
 <body>    
+
+    <div id="cabecalho">cabecalho da página</div>
+
+    <div id="corpo">
+        <div id="parte superior">parte superior</div>
+        <div id="parte inferior">parte inferior</div>
+
+    </div>
+
+    <div id="rodape">rodape da página</div>
+
+
+
     <script src="/Projeto/js/index.js"></script>
     <h1>pagina teste</h1>
     <h2>pagina teste</h2>
@@ -30,10 +91,17 @@
     <br>
 
     <button onclick="olaMundo()">Olá Mundo</button>
+
+    <p>teste de blockquote pra entender o que é:</p>
+    <blockquote cite="https://howow.linebr.com/index.php">
+        teste do blockquote do linebr
+
+    </blockquote>
     
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo, voluptatum, esse, ducimus incidunt rem adipisci ullam magnam ut quas aliquam nemo tenetur ex error ab eos porro necessitatibus modi?</p>
+
+    <p>Lorem <em>teste</em> <small>textin</small> ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo, voluptatum, esse, ducimus incidunt rem adipisci ullam magnam ut quas aliquam nemo tenetur ex error ab eos porro necessitatibus modi?</p>
     
-    <img src="./assets/img/space.jpg" alt="space">
+    <img src="./assets/img/space.jpg" alt="space" width="500px">
 
     <p>...</div></p>
     <p>...</div></p>
